@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel= "stylesheet"  href ="style.css">
+
+    <title>GameRadar</title>
+</head>
+<body>
+    
+
+
+    
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(161, 198, 231);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Game Radar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto"></ul>
+
+
+<!--search bar-->
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </nav>
+<!--search bar-->
+            <a class="nav-link active" aria-current="page" href="Trends.html">Trends</a>
+            <a class="nav-link" href="ReviewPage.html">Review Page</a>
+            <a class="nav-link" href="Games.html">Games</a>
+            <a class="nav-link dropdown-toggle" href="More.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="Contact-More.html">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#">About us</a></li>
+              <li><a class="dropdown-item" href="#">Folow us:</a></li>
+            </ul>
+            <a class="nav-link" href="SingUp.html"><button type="button" class="btn btn-warning">Sing Up</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+<!--With the form tag we can get same informations about the user
+the label tag is used to provide informations
+the input will display an input box, type mean what type of informations that box need -->
+
+    <h1>Be part of our group!!</h1>
+
+    <form onsubmit="changeText()" method="post">
+    
+     <fieldset>
+      <legend>More about You:</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+      <label for= "messege">Please enter your Messege Below:</label>
+      <input type="message" id="Messege" name= "Messege"><br><br>
+      <input type="submit" value="Submit">
+
+     </fieldset>
+    </form>
+
+
+  <script src="main.js"></script>
+
+
+
+    
+
+    
+</body>
+</html>
